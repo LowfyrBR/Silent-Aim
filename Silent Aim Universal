@@ -59,7 +59,7 @@ local DefaultSettings = {
     },
     Aimbot = {
         Enabled = false,
-        SilentAim = false,
+        SilentAim = true,
         Wallbang = false,
         ShowFov = false,
         Snaplines = true,
@@ -74,7 +74,7 @@ local DefaultSettings = {
         FovSize = 150,
         FovColor = Color3new(1, 1, 1),
         Aimlock = "Head",
-        SilentAimRedirect = "Head",
+        SilentAimRedirect = "Torso",
         BlacklistedTeams = {}
     },
     WindowPosition = UDim2.new(0.5, -200, 0.5, -139);
