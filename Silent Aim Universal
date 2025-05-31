@@ -59,7 +59,7 @@ local DefaultSettings = {
     },
     Aimbot = {
         Enabled = false,
-        SilentAim = true,
+        SilentAim = false,
         Wallbang = false,
         ShowFov = false,
         Snaplines = true,
@@ -73,7 +73,7 @@ local DefaultSettings = {
         FovTransparency = 1,
         FovSize = 150,
         FovColor = Color3new(1, 1, 1),
-        Aimlock = "Head",
+        Aimlock = "Torso",
         SilentAimRedirect = "Torso",
         BlacklistedTeams = {}
     },
