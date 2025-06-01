@@ -59,7 +59,7 @@ local DefaultSettings = {
     },
     Aimbot = {
         Enabled = false,
-        SilentAim = false,
+        SilentAim = true,
         Wallbang = false,
         ShowFov = false,
         Snaplines = true,
@@ -73,7 +73,7 @@ local DefaultSettings = {
         FovTransparency = 1,
         FovSize = 150,
         FovColor = Color3new(1, 1, 1),
-        Aimlock = "Torso",
+        Aimlock = "Head",
         SilentAimRedirect = "Torso",
         BlacklistedTeams = {}
     },
@@ -713,7 +713,7 @@ end);
 SilentAim.Toggle("Wallbang", AimbotSettings.Wallbang, function(Callback)
     AimbotSettings.Wallbang = Callback
 end);
-SilentAim.Dropdown("Redirect", {"Head", "Torso"}, function(Callback)
+SilentAim.Dropdown("Redirect", {"Torso", "Head"}, function(Callback)
     AimbotSettings.SilentAimRedirect = Callback
 end);
 SilentAim.Slider("Hit Chance", {Min = 0, Max = 100, Default = AimbotSettings.SilentAimHitChance, Step = 1}, function(Callback)
